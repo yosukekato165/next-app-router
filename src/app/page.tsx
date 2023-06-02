@@ -1,11 +1,11 @@
 import { Counter } from "@/app/_components/counter";
-import { TodoList } from "@/app/_components/todo-list";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center p-24">
       <Counter />
-      <TodoList />
+      <Link href={"/todo"}>Todo page {">"}</Link>
     </main>
   );
 }
